@@ -1,0 +1,31 @@
+﻿I'm sorry, but an uncaught exception occurred.
+
+While running game code:
+  File "game/script.rpy", line 144, in script
+    with coba
+TypeError: 'Dissolve' object is not callable
+
+-- Full Traceback ------------------------------------------------------------
+
+Full traceback:
+  File "game/script.rpy", line 144, in script
+    with coba
+  File "C:\Users\asus\Documents\Python\Renpy\renpy-6.99.11-sdk\renpy\ast.py", line 1265, in execute
+    renpy.exports.with_statement(trans, paired)
+  File "C:\Users\asus\Documents\Python\Renpy\renpy-6.99.11-sdk\renpy\exports.py", line 1370, in with_statement
+    return renpy.game.interface.do_with(trans, paired, clear=clear)
+  File "C:\Users\asus\Documents\Python\Renpy\renpy-6.99.11-sdk\renpy\display\core.py", line 2058, in do_with
+    clear=clear)
+  File "C:\Users\asus\Documents\Python\Renpy\renpy-6.99.11-sdk\renpy\display\core.py", line 2496, in interact
+    repeat, rv = self.interact_core(preloads=preloads, **kwargs)
+  File "C:\Users\asus\Documents\Python\Renpy\renpy-6.99.11-sdk\renpy\display\core.py", line 2717, in interact_core
+    new_widget=layers_root)
+  File "C:\Users\asus\Documents\Python\Renpy\renpy-6.99.11-sdk\renpy\curry.py", line 38, in __call__
+    **dict(self.kwargs.items() + kwargs.items()))
+  File "C:\Users\asus\Documents\Python\Renpy\renpy-6.99.11-sdk\renpy\display\transition.py", line 1026, in ComposeTransition
+    return trans(new_widget=new, old_widget=old)
+TypeError: 'Dissolve' object is not callable
+
+Windows-7-6.1.7600
+Ren'Py 6.99.11.1749
+Test 1.0
