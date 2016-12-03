@@ -1,0 +1,9 @@
+﻿I'm sorry, but errors were detected in your script. Please correct the
+errors listed below, and try again.
+
+
+File "game/script.rpy", line 16: u'timr' is not a keyword argument or valid child for the screen statement.
+    timr 0.01 repeat True action If(tim > 0, true=SetVariable('tim', tim - 0.01), false=[Hide('countdown'), Jump(timer_jump)])
+        ^
+
+Ren'Py Version: Ren'Py 6.99.11.1749
